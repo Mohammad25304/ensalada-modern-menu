@@ -41,8 +41,8 @@ function HomePage() {
             alt="Vibrant mixed green salad bowl"
             width={1600}
             height={1000}
+            loading="eager"
             className="h-full w-full object-cover"
-            priority="true"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/30" />
         </div>
