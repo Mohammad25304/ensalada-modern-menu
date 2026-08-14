@@ -20,8 +20,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:description",
-        content:
-          "ENSALADA serves fresh, modern salads with seasonal ingredients and bold flavors.",
+        content: "ENSALADA serves fresh, modern salads with seasonal ingredients and bold flavors.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -58,19 +57,13 @@ function HomePage() {
               <span className="text-primary">Made Modern.</span>
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Seasonal bowls, crisp greens, and bold dressings — built for
-              the way you eat today.
+              Seasonal bowls, crisp greens, and bold dressings — built for the way you eat today.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild size="lg" className="min-w-[9rem]">
                 <Link to="/menu">View Menu</Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="min-w-[9rem]"
-              >
+              <Button asChild variant="outline" size="lg" className="min-w-[9rem]">
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
@@ -122,41 +115,27 @@ function HomePage() {
                 About ENSALADA
               </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                ENSALADA was born from a simple belief: salad should never be
-                boring. We combine farm-fresh produce, house-made dressings,
-                and globally inspired flavors into bowls that are as
-                nourishing as they are delicious.
+                ENSALADA was born from a simple belief: salad should never be boring. We combine
+                farm-fresh produce, house-made dressings, and globally inspired flavors into bowls
+                that are as nourishing as they are delicious.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Every ingredient is chosen with care — from crisp local
-                greens to ripe seasonal toppings — so every bite feels like a
-                fresh start.
+                Every ingredient is chosen with care — from crisp local greens to ripe seasonal
+                toppings — so every bite feels like a fresh start.
               </p>
 
               <div className="mt-10 grid grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="font-display text-3xl font-semibold text-primary">
-                    100%
-                  </div>
-                  <div className="mt-1 text-sm text-muted-foreground">
-                    Fresh Daily
-                  </div>
+                  <div className="font-display text-3xl font-semibold text-primary">100%</div>
+                  <div className="mt-1 text-sm text-muted-foreground">Fresh Daily</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-display text-3xl font-semibold text-primary">
-                    20+
-                  </div>
-                  <div className="mt-1 text-sm text-muted-foreground">
-                    Signature Bowls
-                  </div>
+                  <div className="font-display text-3xl font-semibold text-primary">20+</div>
+                  <div className="mt-1 text-sm text-muted-foreground">Signature Bowls</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-display text-3xl font-semibold text-primary">
-                    0
-                  </div>
-                  <div className="mt-1 text-sm text-muted-foreground">
-                    Boring Salads
-                  </div>
+                  <div className="font-display text-3xl font-semibold text-primary">0</div>
+                  <div className="mt-1 text-sm text-muted-foreground">Boring Salads</div>
                 </div>
               </div>
             </div>

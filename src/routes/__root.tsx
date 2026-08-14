@@ -89,8 +89,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "ENSALADA — Fresh Salads, Made Modern" },
       {
         property: "og:description",
-        content:
-          "ENSALADA serves fresh, modern salads with seasonal ingredients and bold flavors.",
+        content: "ENSALADA serves fresh, modern salads with seasonal ingredients and bold flavors.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

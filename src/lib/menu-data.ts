@@ -11,12 +11,7 @@ export interface MenuItem {
   featured?: boolean;
 }
 
-export type CategoryId =
-  | "signature"
-  | "leafy"
-  | "protein"
-  | "warm"
-  | "sides";
+export type CategoryId = "signature" | "leafy" | "protein" | "warm" | "sides";
 
 export interface MenuCategory {
   id: CategoryId;
@@ -149,8 +144,7 @@ export const menuItems: MenuItem[] = [
   {
     id: "green-juice",
     name: "Fresh-Pressed Green Juice",
-    description:
-      "Cucumber, celery, green apple, ginger, and kale. Cold-pressed daily.",
+    description: "Cucumber, celery, green apple, ginger, and kale. Cold-pressed daily.",
     price: 6,
     category: "sides",
     image: "/images/salad-side.jpg",

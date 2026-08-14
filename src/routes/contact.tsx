@@ -2,15 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-  Instagram,
-  Facebook,
-  Twitter,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -84,16 +76,8 @@ function ContactPage() {
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
-                  <Input
-                    id="name"
-                    placeholder="Your name"
-                    {...register("name")}
-                  />
-                  {errors.name && (
-                    <p className="text-sm text-destructive">
-                      {errors.name.message}
-                    </p>
-                  )}
+                  <Input id="name" placeholder="Your name" {...register("name")} />
+                  {errors.name && <p className="text-sm text-destructive">{errors.name.message}</p>}
                 </div>
 
                 <div className="grid gap-5 sm:grid-cols-2">
@@ -106,19 +90,12 @@ function ContactPage() {
                       {...register("email")}
                     />
                     {errors.email && (
-                      <p className="text-sm text-destructive">
-                        {errors.email.message}
-                      </p>
+                      <p className="text-sm text-destructive">{errors.email.message}</p>
                     )}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone (optional)</Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      placeholder="+961 ..."
-                      {...register("phone")}
-                    />
+                    <Input id="phone" type="tel" placeholder="+961 ..." {...register("phone")} />
                   </div>
                 </div>
 
@@ -131,18 +108,11 @@ function ContactPage() {
                     {...register("message")}
                   />
                   {errors.message && (
-                    <p className="text-sm text-destructive">
-                      {errors.message.message}
-                    </p>
+                    <p className="text-sm text-destructive">{errors.message.message}</p>
                   )}
                 </div>
 
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full"
-                  disabled={isSubmitting}
-                >
+                <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
@@ -158,9 +128,7 @@ function ContactPage() {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-display font-semibold text-foreground">
-                      Location
-                    </h3>
+                    <h3 className="font-display font-semibold text-foreground">Location</h3>
                     <p className="mt-1 text-sm text-muted-foreground">
                       123 Green Leaf Avenue
                       <br />
@@ -174,9 +142,7 @@ function ContactPage() {
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-display font-semibold text-foreground">
-                      Phone
-                    </h3>
+                    <h3 className="font-display font-semibold text-foreground">Phone</h3>
                     <a
                       href="tel:+96111234567"
                       className="mt-1 block text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -191,9 +157,7 @@ function ContactPage() {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-display font-semibold text-foreground">
-                      Email
-                    </h3>
+                    <h3 className="font-display font-semibold text-foreground">Email</h3>
                     <a
                       href="mailto:hello@ensalada.com"
                       className="mt-1 block text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -208,9 +172,7 @@ function ContactPage() {
                     <Clock className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-display font-semibold text-foreground">
-                      Hours
-                    </h3>
+                    <h3 className="font-display font-semibold text-foreground">Hours</h3>
                     <p className="mt-1 text-sm text-muted-foreground">
                       Mon – Fri: 10am – 9pm
                       <br />
@@ -223,12 +185,10 @@ function ContactPage() {
 
             <Card className="border-border bg-card">
               <CardContent className="p-6 sm:p-8">
-                <h3 className="font-display font-semibold text-foreground">
-                  Follow Us
-                </h3>
+                <h3 className="font-display font-semibold text-foreground">Follow Us</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Stay updated on new bowls, seasonal specials, and behind-the-scenes
-                  from the kitchen.
+                  Stay updated on new bowls, seasonal specials, and behind-the-scenes from the
+                  kitchen.
                 </p>
                 <div className="mt-5 flex gap-3">
                   <a

@@ -24,9 +24,7 @@ export function MenuCard({ item }: MenuCardProps) {
       </div>
       <CardContent className="p-5">
         <div className="flex items-start justify-between gap-3">
-          <h3 className="font-display text-xl font-semibold text-foreground">
-            {item.name}
-          </h3>
+          <h3 className="font-display text-xl font-semibold text-foreground">{item.name}</h3>
         </div>
         <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
           {item.description}
@@ -34,11 +32,7 @@ export function MenuCard({ item }: MenuCardProps) {
         {item.tags.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-2">
             {item.tags.map((tag) => (
-              <Badge
-                key={tag}
-                variant="secondary"
-                className="text-xs font-medium"
-              >
+              <Badge key={tag} variant="secondary" className="text-xs font-medium">
                 {tag}
               </Badge>
             ))}

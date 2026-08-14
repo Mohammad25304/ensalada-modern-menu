@@ -3,12 +3,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X, Salad } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -43,9 +38,7 @@ export function Header() {
                 to={link.to}
                 className={cn(
                   "relative rounded-md px-4 py-2 text-sm font-medium transition-colors",
-                  active
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground",
+                  active ? "text-foreground" : "text-muted-foreground hover:text-foreground",
                 )}
               >
                 {link.label}
@@ -70,9 +63,7 @@ export function Header() {
           <SheetContent side="right" className="w-72">
             <div className="flex h-full flex-col">
               <div className="flex items-center justify-between">
-                <span className="font-display text-xl font-semibold text-foreground">
-                  ENSALADA
-                </span>
+                <span className="font-display text-xl font-semibold text-foreground">ENSALADA</span>
                 <SheetClose asChild>
                   <Button variant="ghost" size="icon" aria-label="Close menu">
                     <X className="h-5 w-5" />

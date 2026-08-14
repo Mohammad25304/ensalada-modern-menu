@@ -1,14 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-  Instagram,
-  Facebook,
-  Twitter,
-  Salad,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter, Salad } from "lucide-react";
 
 export function Footer() {
   return (
@@ -26,16 +17,14 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Fresh, modern salads made with seasonal ingredients and bold
-              flavors. Eat green, feel great.
+              Fresh, modern salads made with seasonal ingredients and bold flavors. Eat green, feel
+              great.
             </p>
           </div>
 
           {/* Hours */}
           <div>
-            <h4 className="font-display text-base font-semibold text-foreground">
-              Hours
-            </h4>
+            <h4 className="font-display text-base font-semibold text-foreground">Hours</h4>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-3">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
@@ -58,9 +47,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-display text-base font-semibold text-foreground">
-              Contact
-            </h4>
+            <h4 className="font-display text-base font-semibold text-foreground">Contact</h4>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
@@ -72,10 +59,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-primary" />
-                <a
-                  href="tel:+96111234567"
-                  className="transition-colors hover:text-foreground"
-                >
+                <a href="tel:+96111234567" className="transition-colors hover:text-foreground">
                   +961 1 123 456
                 </a>
               </li>
@@ -93,9 +77,7 @@ export function Footer() {
 
           {/* Social */}
           <div>
-            <h4 className="font-display text-base font-semibold text-foreground">
-              Follow Us
-            </h4>
+            <h4 className="font-display text-base font-semibold text-foreground">Follow Us</h4>
             <div className="mt-4 flex gap-3">
               <a
                 href="https://instagram.com"
@@ -131,16 +113,10 @@ export function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-muted-foreground sm:flex-row">
           <p>© {new Date().getFullYear()} ENSALADA. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link
-              to="/menu"
-              className="transition-colors hover:text-foreground"
-            >
+            <Link to="/menu" className="transition-colors hover:text-foreground">
               Menu
             </Link>
-            <Link
-              to="/contact"
-              className="transition-colors hover:text-foreground"
-            >
+            <Link to="/contact" className="transition-colors hover:text-foreground">
               Contact
             </Link>
           </div>

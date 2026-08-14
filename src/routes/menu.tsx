@@ -54,9 +54,7 @@ function MenuPage() {
             </div>
 
             {categories.map((category) => {
-              const items = menuItems.filter(
-                (item) => item.category === category.id,
-              );
+              const items = menuItems.filter((item) => item.category === category.id);
               return (
                 <TabsContent
                   key={category.id}
@@ -67,9 +65,7 @@ function MenuPage() {
                     <h3 className="font-display text-2xl font-semibold text-foreground">
                       {category.name}
                     </h3>
-                    <p className="mt-2 text-muted-foreground">
-                      {category.description}
-                    </p>
+                    <p className="mt-2 text-muted-foreground">{category.description}</p>
                   </div>
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {items.map((item) => (
