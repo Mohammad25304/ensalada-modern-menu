@@ -21,7 +21,34 @@ export const Route = createFileRoute("/menu")({
           "Explore the ENSALADA menu: signature bowls, leafy greens, protein salads, warm roasted bowls, and refreshing sides.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://ensalada-modern-menu.lovable.app/menu" },
+      {
+        property: "og:image",
+        content: "https://ensalada-modern-menu.lovable.app/images/salad-signature.jpg",
+      },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Menu — ENSALADA" },
+      {
+        name: "twitter:description",
+        content:
+          "Signature bowls, leafy greens, protein salads, warm roasted bowls, and refreshing sides.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://ensalada-modern-menu.lovable.app/images/salad-signature.jpg",
+      },
+    ],
+    links: [{ rel: "canonical", href: "https://ensalada-modern-menu.lovable.app/menu" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Menu",
+          name: "ENSALADA Menu",
+          url: "https://ensalada-modern-menu.lovable.app/menu",
+        }),
+      },
     ],
   }),
   component: MenuPage,
