@@ -37,7 +37,25 @@ export const Route = createFileRoute("/contact")({
           "Get in touch with ENSALADA. Visit us in Beirut, call for reservations, or send a message.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://ensalada-modern-menu.lovable.app/contact" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Contact — ENSALADA" },
+      {
+        name: "twitter:description",
+        content: "Visit ENSALADA in Beirut, call for reservations, or send us a message.",
+      },
+    ],
+    links: [{ rel: "canonical", href: "https://ensalada-modern-menu.lovable.app/contact" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          name: "Contact — ENSALADA",
+          url: "https://ensalada-modern-menu.lovable.app/contact",
+        }),
+      },
     ],
   }),
   component: ContactPage,
