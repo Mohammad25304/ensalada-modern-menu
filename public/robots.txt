@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://ensalada-modern-menu.lovable.app/sitemap.xml
